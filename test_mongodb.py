@@ -2,11 +2,11 @@
 from pymongo.mongo_client import MongoClient
 import os
 
-MONGO_DB_URL=os.getenv("MONGO_DB_URL")
+uri=os.getenv("MONGO_DB_URL")
 
 
 # Create a new client and connect to the server
-client = MongoClient(MONGO_DB_URL)
+client = MongoClient(uri)
 
 # Send a ping to confirm a successful connection
 try:
